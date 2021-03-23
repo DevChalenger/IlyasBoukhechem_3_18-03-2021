@@ -41,41 +41,69 @@ border-bottom: 4px solid #99E2D0;
     margin-bottom: 15px;
     overflow: hidden;
     cursor: pointer;
-    animation-name:ApparitionTiming ; 
-    animation-duration:100000s ;
-    opacity: 0;
 }
-@keyframes ApparitionTiming {
-    0% {opacity: 0;}
-    0.001%{opacity: 1;}
+@keyframes ApparitionTiming1 {
+    from{
+        opacity: 0;
+        margin-top: 1em;
+    }  
+    to{
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+@keyframes ApparitionTiming2 {
+    0%{
+        opacity: 0;
+        margin-top: 1em;
+    }
+    25%{
+        opacity: 0;
+        margin-top: 1em;
+    }  
+    100%{
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+@keyframes ApparitionTiming3 {
+    0%{
+        opacity: 0;
+        margin-top: 1em;
+    }
+    50%{
+        opacity: 0;
+        margin-top: 1em;
+    }  
+    100%{
+        opacity: 1;
+        margin-top: 0px;
+    }
 }
 .one{
-    animation-delay: 0.7s;  
+    animation-name: ApparitionTiming1;
+    animation-duration:1.3s;
 }
-.two{
-    animation-delay: 0.9s;
+.two{ 
+    animation-name: ApparitionTiming2;
+    animation-duration:1.4s;
 }
 .three{
-    animation-delay: 1.1s; 
+    animation-name: ApparitionTiming3;
+    animation-duration: 1.5s;
 }
 .MenuFood p{
    margin: 0;
 }
 .Plats{
     display: inline-block;
-    text-overflow:ellipsis;
-    white-space: nowrap; 
-    overflow: hidden;
     margin: 0;
-}
-.MenuFood h4{
-    font-size: 1.17em;
 }
 .Price{ 
     display: flex;
-    font-weight: bold;
+    font-size: 0.9em;
     align-items: flex-end;
-    padding: 10px;
+    padding: 10px 25px;
 }
 .ButtonOrder{
     width: 150px;
@@ -87,13 +115,13 @@ border-bottom: 4px solid #99E2D0;
     flex-direction: column;
     padding: 10px;
     overflow: hidden;
-    white-space: nowrap;
     text-overflow: ellipsis;
 }
 .InformationMenu p{
     overflow: hidden;
     text-overflow: ellipsis;
-    font-size: 0.85em;
+    white-space: nowrap;
+    font-size: 0.8em;
 }
 .MenuFood:hover .check{
     margin-right: 0px;
