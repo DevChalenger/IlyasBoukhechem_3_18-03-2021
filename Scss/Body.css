@@ -17,7 +17,6 @@ main {
   position: relative;
 }
 a {
-  display: block;
   text-decoration: none;
   color: black;
 }

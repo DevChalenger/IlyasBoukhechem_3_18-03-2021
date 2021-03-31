@@ -60,42 +60,33 @@ section {
 .Information span {
   font-weight: lighter;
 }
-.Menu {
-  position: relative;
-  right: 20px;
-  bottom: 10px;
-  font-size: 1.5em;
+.fa-heart {
+  font-size: 1em;
+  display: none;
 }
 .First {
-  position: absolute;
-  transition: all 1s;
+  order: 2;
+  z-index: 2;
+}
+.First:hover {
+  z-index: 0;
+}
+.Menu {
+  width: 2em;
+  height: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .Position {
-  display: inline;
-  transition: all 2s;
-  font-size: 1em;
-  font-weight: lighter;
-  position: absolute;
-  opacity: 0;
-  color: #ff79da;
-  stop-color: red;
-  background-clip: text;
-}
-.fa-heart {
-  position: absolute;
+  content: none;
+  width: 0;
+  order: 1;
+  color: white;
 }
 .Position:hover {
-  transition: all 2s;
-  opacity: 1;
-}
-.Position::before {
-  display: initial;
-}
-.Menu:hover .First {
-  transition: all;
-  transition-duration: 2s;
-  transition-delay: 0.1s;
-  opacity: 0;
+  color: red;
+  z-index: 3;
 }
 .Information p {
   margin: 0;
