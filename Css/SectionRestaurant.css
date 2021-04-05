@@ -17,6 +17,7 @@
   align-items: center;
 }
 .ArticleRestaurant h3 {
+  width: 100%;
   display: inline-block;
   position: relative;
   font-weight: lighter;
@@ -107,7 +108,7 @@
 }
 .Hover:hover .fa-check-circle {
   transform: rotate(360deg);
-  transition: 800ms;
+  transition: 1s;
 }
 .check {
   margin-right: -3.8rem;
@@ -121,4 +122,42 @@
   background-color: #99e2d0;
   color: white;
   transition: all 0.8s;
+}
+.FlexTitle {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.MenuFlex {
+  width: 1em;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+}
+.MenuFlex:hover .First {
+  transition: all;
+  transition-duration: 1s;
+  transition-delay: 0.1s;
+  opacity: 0;
+}
+@media screen and (min-width: 500px) {
+  .FlexMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+  }
+  .MenuFood {
+    flex-basis: 45%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .FlexMenu {
+    justify-content: space-between;
+  }
+  .MenuFood {
+    flex-basis: 31%;
+  }
 }

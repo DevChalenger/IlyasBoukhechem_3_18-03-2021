@@ -19,7 +19,7 @@ main {
 a {
   display: block;
   text-decoration: none;
-  color: black;
+  color: inherit;
 }
 a:visited {
   color: black;
@@ -55,6 +55,9 @@ a:visited {
   border-radius: 100%;
   background-color: rgba(255, 255, 255, 1);
   transform: rotate(360deg);
+}
+.loader span {
+  fill: url(icon);
 }
 @keyframes loader {
   100% {
