@@ -5,7 +5,6 @@ footer {
   padding-left: 5%;
   li {
     margin-bottom: 5px;
-    width: auto;
   }
   i {
     margin-right: 10px;
@@ -14,9 +13,12 @@ footer {
   }
 }
 ul {
+  display: inline-flex;
   list-style-type: none;
   padding: 0;
+  flex-direction: column;
 }
 .OhMyFood {
   font-family: Shrikhand;
+  margin-bottom: 0;
 }

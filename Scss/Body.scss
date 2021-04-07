@@ -7,6 +7,9 @@
   font-family: Roboto;
   src: url("../polices/Roboto-Regular.ttf") format("TrueType");
 }
+$First-color: #9356dc;
+$Second-color: #ff79da;
+$Third-color: #99e2d0;
 @keyframes loader {
   100% {
     opacity: 0;
@@ -28,11 +31,10 @@ main {
   position: relative;
 }
 a {
-  display: block;
   text-decoration: none;
   color: inherit;
   &:visited {
-    color: black;
+    color: inherit;
   }
 }
 .loader {
@@ -41,20 +43,19 @@ a {
   left: 0;
   height: 100%;
   width: 100%;
-  z-index: 8;
-  background-color: rgb(255, 255, 255);
-  opacity: 0.8;
-  align-items: center;
-  justify-content: center;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.8);
   animation: loader 2s;
   animation-delay: 1s;
   animation-fill-mode: both;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
-  color: #9356dc;
+  color: $First-color;
 }
 .RotateLoader {
-  background-image: linear-gradient(#9356dc, #ff79da, #99e2d0);
+  background-image: linear-gradient($First-color, $Second-color, $Third-color);
   animation: RotateLoader 6s;
   padding: 0.5em;
   border-radius: 100%;
@@ -66,4 +67,21 @@ a {
   border-radius: 100%;
   background-color: rgb(255, 255, 255);
   transform: rotate(360deg);
+}
+.Button {
+  padding: 15px 20px;
+  font-size: 1em;
+  margin: 20px auto;
+  outline: none;
+  border-radius: 2rem;
+  color: white;
+  border: none;
+  background-image: linear-gradient($Second-color, $First-color);
+  opacity: 1;
+  transition: opacity 1s;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.5);
+  &:hover {
+    opacity: 0.8;
+  }
 }

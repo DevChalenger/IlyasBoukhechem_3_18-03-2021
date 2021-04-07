@@ -1,1 +1,1 @@
-footer{background-color:#353535;color:white;padding:10px;padding-left:5%}footer li{margin-bottom:5px;width:auto}footer i{margin-right:10px;font-size:0.8em;width:20px}ul{list-style-type:none;padding:0}.OhMyFood{font-family:Shrikhand}
+footer{background-color:#353535;color:white;padding:10px;padding-left:5%}footer li{margin-bottom:5px}footer i{margin-right:10px;font-size:0.8em;width:20px}ul{display:inline-flex;list-style-type:none;padding:0;flex-direction:column}.OhMyFood{font-family:Shrikhand;margin-bottom:0}

@@ -9,8 +9,7 @@
   }
 }
 .MenuRestaurant {
-  margin-top: -2rem;
-  order: 1;
+  margin-top: -2em;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -29,7 +28,6 @@
 .ArticleRestaurant {
   h3 {
     width: 100%;
-    display: inline-block;
     position: relative;
     font-weight: lighter;
     padding-bottom: 10px;
@@ -40,7 +38,7 @@
       height: 2px;
       bottom: 0;
       left: 0;
-      border-bottom: 4px solid #99e2d0;
+      border-bottom: 4px solid $Third-color;
     }
   }
 }
@@ -126,7 +124,7 @@
   border-bottom-right-radius: 0.5em;
   align-items: center;
   justify-content: center;
-  background-color: #99e2d0;
+  background-color: $Third-color;
   color: white;
   transition: all 0.8s;
 }
@@ -135,20 +133,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-.MenuFlex {
-  width: 1em;
-  font-size: 1.5em;
-  display: flex;
-  align-items: center;
-  &:hover {
-    .First {
-      transition: all;
-      transition-duration: 1s;
-      transition-delay: 0.1s;
-      opacity: 0;
-    }
-  }
 }
 @media screen and (min-width: 500px) {
   .FlexMenu {
