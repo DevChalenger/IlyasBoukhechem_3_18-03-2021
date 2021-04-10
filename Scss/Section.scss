@@ -62,7 +62,7 @@ section {
     font-weight: bold;
   }
 }
-.Menu {
+.BlockHeart {
   width: 1em;
   position: relative;
   font-size: 1.5em;
@@ -70,22 +70,19 @@ section {
   justify-content: center;
   align-items: center;
   &:hover {
-    .First {
+    .Heart {
       transition: all;
       transition-duration: 1s;
-      transition-delay: 0.1s;
+      transition-delay: 0.5s;
       opacity: 0;
     }
   }
 }
-.First {
+.fa-heart {
   position: absolute;
-  transition: all 1s;
-}
-.Position {
   transition: all 2s;
-  font-size: 1em;
-  position: absolute;
+}
+.HearGradient {
   opacity: 0;
   width: 1em;
   height: 1em;
