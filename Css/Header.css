@@ -1,1 +1,54 @@
-.Header{display:flex;align-items:center;flex-direction:column;justify-content:center}.Header h1{font-size:1.7em}.OhMyfoodHead{width:100%;padding:18px 0 18px;margin:0;z-index:3;display:flex;justify-content:center;box-shadow:0px 1px 10px 0px rgba(0,0,0,0.5)}.LogoOhMyFood{height:30px}.fa-arrow-left{position:absolute;left:20px;font-size:1em}.Map{width:100%;background-color:#eaeaea;display:flex;justify-content:center;align-items:center}.Map i{margin-right:10px}.Reservation{width:100%;padding:30px 0px 20px 0px;display:flex;flex-direction:column;justify-content:center;text-align:center;background-color:#f6f6f6}.Reservation h2{width:70%;margin:auto;margin-bottom:10px}.Reservation p{width:80%;margin:auto}
+.Header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.Header h1 {
+  font-size: 1.7em;
+}
+.OhMyfoodHead {
+  width: 100%;
+  padding: 18px 0 18px;
+  margin: 0;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.LogoOhMyFood {
+  height: 30px;
+}
+.fa-arrow-left {
+  position: absolute;
+  left: 20px;
+  font-size: 1em;
+}
+.Map {
+  width: 100%;
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Map i {
+  margin-right: 10px;
+}
+.Reservation {
+  width: 100%;
+  padding: 30px 0px 20px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #f6f6f6;
+}
+.Reservation h2 {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.Reservation p {
+  width: 80%;
+  margin: auto;
+}
