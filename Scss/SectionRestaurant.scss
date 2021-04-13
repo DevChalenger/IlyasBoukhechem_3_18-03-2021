@@ -1,3 +1,6 @@
+$First-color: #9356dc;
+$Second-color: #ff79da;
+$Third-color: #99e2d0;
 @keyframes ApparitionTiming1 {
   from {
     opacity: 0;
@@ -17,17 +20,20 @@
   border-top-right-radius: 2rem;
   border-top-left-radius: 2rem;
   background-color: rgb(246, 246, 246);
-  h2 {
-    font-family: Shrikhand;
-    font-size: 1.8em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  header {
+    h2 {
+      font-family: Shrikhand;
+      font-size: 1.6em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 }
 .ArticleRestaurant {
   h3 {
     width: 100%;
+    font-size: 1.2em;
     position: relative;
     font-weight: lighter;
     padding-bottom: 10px;
@@ -79,10 +85,7 @@
 .four {
   animation-delay: 1.5s;
 }
-.Plats {
-  display: inline-block;
-  margin: 0;
-}
+
 .Price {
   display: flex;
   font-size: 0.9em;
@@ -101,10 +104,16 @@
   overflow: hidden;
   text-overflow: ellipsis;
   p {
+    font-size: 0.8em;
+  }
+  .Plats {
+    font-size: 1em;
+    margin: 0;
+  }
+  .WrapSpace {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    font-size: 0.8em;
   }
 }
 .Hover {
